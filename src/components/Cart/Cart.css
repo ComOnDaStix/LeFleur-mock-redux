@@ -1,0 +1,88 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #fffaed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-out; /* added transition */
+  z-index: 10000;
+  transform: translateX(350px); /* added default transform to keep drawer hidden */
+}
+
+.drawer.open {
+  transform: translateX(0); 
+} 
+
+.icon-close {
+  width: 25px;
+  cursor: pointer;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.text-container h2 {
+  font-size: 20px;
+}
+
+.item img {
+  width: 112px;
+}
+
+.item div h1 {
+  font-size: 12px;
+
+  align-items: center;
+  text-align: center;
+}
+
+.delete-btn-cart {
+  width: 16px;
+  display: flex;
+  margin-bottom: 36%;
+  margin-left: 24px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  margin-top: 2%;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.item h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cart-header {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* set the background color to black with 50% opacity */
+  z-index: 9999; /* set the z-index to a high value to make sure it appears on top of everything else */
+}

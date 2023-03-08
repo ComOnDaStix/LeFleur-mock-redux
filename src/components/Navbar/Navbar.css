@@ -1,0 +1,33 @@
+
+.site-logo {
+    width: 600px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* adjust as needed */
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 1000;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .cartIcon {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    cursor: pointer;
+  }
+  .cartIcon:hover{
+    text-decoration: underline;
+  }
